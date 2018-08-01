@@ -219,9 +219,26 @@ font-weight: 200;
 }
 #left-column h1{
   padding-bottom: 15px;
+  text-align: center;
   text-decoration: underline;
   font-size: 35px;
   text-shadow: 1px 2px 8px #E60012;
+}
+#left-column p {
+  text-align:left;
+
+}
+#left-column img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #E60012;
+  border-width: thin;
+  border-radius: 50%;
+  box-shadow: 1px 0px 30px 0px rgba(255,255,255,0.7);
+}
+#left-column span {
+  color: #E60012;
+  text-shadow: 1px 0px 1px #fff;
 }
 #google-maps {
   position: absolute;
@@ -235,12 +252,29 @@ font-weight: 200;
   padding-left: 10px;
   padding-right: 25px;
   width: 450px;
+  text-align: center;
   }
 #right-column h1{
   padding-bottom: 15px;
   text-decoration: underline;
   font-size: 35px;
   text-shadow: 1px 2px 8px #E60012;
+}
+#right-column span {
+  color: #E60012;
+  text-shadow: 1px 0px 1px #fff;
+}
+#right-column p {
+  text-align:left;
+
+}
+#right-column img {
+  height: 100px;
+  width: 300px;
+  border: 2px solid #E60012;
+  border-width: thin;
+
+  box-shadow: 1px 0px 30px 0px rgba(255,255,255,0.7);
 }
 #container-2 {
   margin: 0 auto;
@@ -254,6 +288,8 @@ font-weight: 200;
   background-attachment: fixed;
   height: 400px;
   width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom : 1px solid #xxfff;
 }
 #parallax-2 h1{
   position: absolute;
