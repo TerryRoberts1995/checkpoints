@@ -3,7 +3,7 @@ body{
 }
 header{
   position: relative;
-  background: url("../img/tvgroup.jpg");
+  background: url("../img/TVgroup.jpg");
   background-size:  cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ font-weight: 200;
   border-bottom: 1px solid #fff;
 }
 #parallax-1 {
-  background: url("../img/outlander-hd.jpg") no-repeat center;
+  background: url("../img/outlander-HD.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
