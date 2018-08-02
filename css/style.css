@@ -3,7 +3,7 @@ body{
 }
 header{
   position: relative;
-  background: url("./img/TVgroup.jpg");
+  background: url("../img/tv.jpg");
   background-size:  cover;
   background-position: center;
   background-repeat: no-repeat;
