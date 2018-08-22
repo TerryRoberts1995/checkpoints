@@ -105,8 +105,9 @@ grid-template-areas:
   grid-area: nav;
 }
 #contact {
+  padding: 0 5px 0 5px;
   width: 98.53;
-  height: 30px;
+  height: 25px;
   margin-left: 5%;
   opacity: 0.8;
   filter: alpha(opacity=50);
@@ -114,23 +115,38 @@ grid-template-areas:
   text-shadow: 0px 0px 30px 0px rgba(255,255,255,0.7);
   grid-area: contact;
 }
+#contact:hover{
+  border: 1px solid #fff;
+}
 #specials {
+  padding: 0 5px 0 5px;
   margin-left: 5%;
   opacity: 0.8;
   filter: alpha(opacity=50);
   grid-area: specials;
 }
+#specials:hover{
+  border: 1px solid #fff;
+}
 #finance {
+  padding: 0 5px 0 5px;
   margin-left: 5%;
   opacity: 0.8;
   filter: alpha(opacity=50);
   grid-area: finance;
 }
+#finance:hover{
+  border: 1px solid #fff;
+}
 #about-us {
+  padding: 0 5px 0 5px;
   margin-left: 5%;
   opacity: 0.8;
   filter: alpha(opacity=50);
   grid-area: about;
+}
+#about-us:hover{
+  border: 1px solid #fff;
 }
 #container-1 {
   margin: 0 auto;
@@ -189,8 +205,8 @@ grid-template-areas:
   box-shadow: 1px 0px 30px 0px rgba(255,255,255,0.7);
 }
 #left-column span {
-  color: #E60012;
-  text-shadow: 1px 0px 1px #fff;
+  color: silver;
+  text-shadow: 1px 0px 1px #000;
 }
 iframe{
   grid-area: google;
@@ -208,8 +224,8 @@ iframe{
   text-shadow: 1px 2px 1px #fff;
 }
 #right-column span {
-  color: #E60012;
-  text-shadow: 1px 0px 1px #fff;
+  color: silver;;
+  text-shadow: 1px 0px 0px #000;
 }
 #right-column p {
   text-align:left;
@@ -246,7 +262,7 @@ iframe{
   text-shadow: 2px 2px 10px #000,2px 2px 10px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
   html, body {
     max-width: 100%;
     overflow-x: hidden;
