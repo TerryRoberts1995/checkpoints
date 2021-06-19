@@ -1,0 +1,322 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+header{
+  background: url("../img/2017-HD.jpg");
+  height:200px;
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 2px 0 #000;
+  font-size: 65px;
+  color: #fff;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  ". word ."
+  "alex-h1 word auto-h1";
+}
+.background {
+  position: relative;
+  grid-area: word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#head-img{
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
+#mitsu-logo {
+  position: absolute;
+  margin: auto;
+  height: auto;
+  width: 40%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  z-index: 2;
+}
+.alex-name,.auto-name{
+  margin-top: 25%;
+  font-family: 'Poiret One', cursive;
+  font-size: 48px;
+  color: #fff;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+.alex-name{
+  grid-area: alex-h1
+}
+.auto-name{
+  grid-area: auto-h1
+}
+.navigation {
+background-image: url("../img/carbon-bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #fff;
+width: 100%;
+height: 25%;
+font-size: 25px;
+font-weight: 200;
+display: grid;
+grid-column-gap: 10px;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 3fr;
+grid-template-areas:
+"search nav"
+}
+#search {
+  width: 250px;
+  left: 10px;
+  bottom: 3px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px #000,2px 2px 10px;
+  grid-area: search;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+#search-area {
+  left:1%;
+  bottom: 25%;
+  font-size: 35px;
+  color: #fff;
+}
+#search-area i{
+  font-size: 20px;
+  margin-left: 20px;
+  color: #fff;
+}
+#nav-bar {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-shadow:3px 2px 0 #000;
+  list-style: none;
+  grid-area: nav;
+}
+#contact {
+  padding: 0 5px 0 5px;
+  width: 98.53;
+  height: 25px;
+  margin-left: 5%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  transition: background-color 0.5s ease;
+  text-shadow: 0px 0px 30px 0px rgba(255,255,255,0.7);
+  grid-area: contact;
+}
+#contact:hover{
+  border: 1px solid #fff;
+}
+#specials {
+  padding: 0 5px 0 5px;
+  margin-left: 5%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  grid-area: specials;
+}
+#specials:hover{
+  border: 1px solid #fff;
+}
+#finance {
+  padding: 0 5px 0 5px;
+  margin-left: 5%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  grid-area: finance;
+}
+#finance:hover{
+  border: 1px solid #fff;
+}
+#about-us {
+  padding: 0 5px 0 5px;
+  margin-left: 5%;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  grid-area: about;
+}
+#about-us:hover{
+  border: 1px solid #fff;
+}
+#container-1 {
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  border-bottom: 1px solid #fff;
+}
+#parallax-1 {
+  background: url("../img/interior.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#parallax-1 h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000,2px 2px 10px;
+}
+.flex-container {
+  text-align: center;
+  color: #fff;
+  background-image:url("../img/column.jpg");
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "left google right";
+}
+#left-column {
+  padding: 0px 15px 5px 15px;
+  /* gird-area: left; */
+}
+#left-column h1{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+  text-shadow: 1px 2px 1px #fff;
+}
+#left-column p {
+  text-align:left;
+}
+#left-column img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #E60012;
+  border-width: thin;
+  border-radius: 50%;
+  box-shadow: 1px 0px 30px 0px rgba(255,255,255,0.7);
+}
+#left-column span {
+  color: silver;
+  text-shadow: 1px 0px 1px #000;
+}
+iframe{
+  grid-area: google;
+}
+#right-column{
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  grid-area: right;
+  }
+#right-column h1{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+  font-size: 35px;
+  text-shadow: 1px 2px 1px #fff;
+}
+#right-column span {
+  color: silver;;
+  text-shadow: 1px 0px 0px #000;
+}
+#right-column p {
+  text-align:left;
+}
+#right-column img {
+  height: 100px;
+  width: 300px;
+  border: 2px solid #E60012;
+  border-width: thin;
+  box-shadow: 1px 0px 30px 0px rgba(255,255,255,0.7);
+}
+#container-2 {
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+}
+#parallax-2 {
+  position: relative;
+  background: url("../img/headlight.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom : 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#parallax-2 h1{
+  font-family: 'Poiret One', cursive;
+  font-size: 75px;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000,2px 2px 10px;
+}
+@media (max-width: 1200px){
+  #container-1, #container-2{
+    width: 100vw;
+    }
+  #parallax-1 h1 {
+    font-size: 35px;
+  }
+  #parallax-2 h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 700px){
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .background{
+  display: none;
+  }
+  .alex-name{
+  font-size: 28pt;
+  }
+  .auto-name{
+    font-size: 28pt;
+  }
+  .navigation{
+    display: grid;
+    grid-template-rows: .5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "search"
+    "nav";
+  }
+  #nav-bar{
+    font-size: 20px;
+    border-top: none;
+    padding: 0;
+  }
+  #search{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+  #search-area i{
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .flex-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "left"
+    "google"
+    "right"
+  }
+}
